@@ -1,0 +1,11 @@
+ SELECT first_name FROM customer
+ WHERE first_name = "Jared";
+
+SELECT email FROM customer
+WHERE first_name='Nancy' and last_name='Thomas'
+
+SELECT description FROM film
+WHERE title = 'Outlaw Hanky'
+
+SELECT phone FROM address
+WHERE address = '259 Ipoh Drive'

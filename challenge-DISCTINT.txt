@@ -1,0 +1,3 @@
+SELECT DISTINCT(rating) FROM film;
+
+SELECT DISTINCT(email) FROM customer;
