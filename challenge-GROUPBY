@@ -1,0 +1,15 @@
+SELECT staff_id, COUNT(amount) FROM payment
+GROUP BY staff_id
+ORDER BY COUNT(amount) DESC;
+
+SELECT ROUND(AVG(replacement_cost),2), rating FROM film
+GROUP BY rating 
+ORDER BY round;
+
+SELECT customer_id, SUM(amount) FROM payment
+WHERE staff_id = 2
+GROUP BY customer_id
+HAVING SUM(amount) > 100;
+
+
+
