@@ -1,0 +1,7 @@
+SELECT DISTINCT(TO_CHAR(payment_date, 'MONTH')) AS MESES
+FROM payment;
+
+
+SELECT COUNT(*) AS MESES
+FROM payment
+WHERE EXTRACT(dow FROM payment_date) = 1;
