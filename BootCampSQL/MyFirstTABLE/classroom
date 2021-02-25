@@ -1,0 +1,28 @@
+ALTER TABLE information
+RENAME TO new_info;
+
+INSERT INTO new_info(title)
+VALUES
+('some new title');
+
+
+ALTER TABLE new_info 
+DROP COLUMN IF EXISTS people;
+
+INSERT INTO employees (
+first_name,
+	last_name,
+	birthdate,
+	hire_date,
+	salary
+)
+
+VALUES (
+	
+	'Jéssica',
+	'Araújo',
+	'1999-08-27',
+	'2020-11-14',
+	700
+);
+
